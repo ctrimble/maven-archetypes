@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="example-archetype"
+  xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requiredProperties>
+      <requiredProperty key="projectName"></requiredProperty>
+      <requiredProperty key="projectDescription"></requiredProperty>
+      <requiredProperty key="projectInceptionYear"></requiredProperty>
+      <requiredProperty key="githubOwner"></requiredProperty>
+      <requiredProperty key="githubRepository"></requiredProperty>
+      <requiredProperty key="gitignore"><defaultValue>.gitignore</defaultValue></requiredProperty>
+    </requiredProperties>
+  <fileSets>
+
+    <fileSet filtered="false" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>__gitignore__</include>
+        <include>.travis.yml</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>LICENSE</include>
+        <include>README.md</include>
+        <include>eclipse-formatter-config.xml</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  
+</archetype-descriptor>
