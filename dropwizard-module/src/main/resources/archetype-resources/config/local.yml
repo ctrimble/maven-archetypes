@@ -1,0 +1,6 @@
+logging:
+  level: INFO
+  loggers:
+    '${package}': DEBUG
+  appenders:
+    - type: 'console'

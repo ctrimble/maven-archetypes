@@ -1,0 +1,6 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+#set( $application_name = "${name}Application" )
+#set( $configuration_name = "${name}Configuration" )
+#set( $module_name = "${name}Module" )
